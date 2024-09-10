@@ -28,3 +28,6 @@ packer_cache/
 
 # Ignore .DS_Store (macOS specific)
 .DS_Store
+
+# ignore zip files
+*.zip

@@ -4,9 +4,9 @@ provider "aws" {
 
 module "vpc" {
   source = "../modules/vpc/aws"
-  cidr_block = var.cidr_block
-  subnet_cidr_blocks = var.subnet_cidr_blocks
-  name = "packer-vpc"
+  vpc_cidr = var.vpc_cidr
+  subnet_vpc_cidrs = var.subnet_vpc_cidrs
+  tags = "packer-vpc"
 }
 
 output "subnet_ids" {
